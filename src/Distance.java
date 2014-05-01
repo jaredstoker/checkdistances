@@ -1,6 +1,6 @@
-public Class Distance {
-   private length;
-   private connectingCity;
+public class Distance {
+   private int length;
+   private City connectingCity;
    
    public Distance(int length, City connectingCity) {
       this.length = length;
@@ -12,14 +12,14 @@ public Class Distance {
    }
    
    public int getLength() {
-      return length();
+      return length;
    }
    
    public void setCity(City connectingCity) {
       this.connectingCity = connectingCity;
    }
    
-   public void getCity(City connectingCity) {
+   public City getCity() {
       return connectingCity;
    }
 }
