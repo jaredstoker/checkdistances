@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 
+import javax.swing.JOptionPane;
+
 /**
  * 
  */
@@ -32,7 +34,7 @@ public class City {
 	public void getConnectedCity(){
 		for(int i = 0; i < connectedCities.size(); i++){
 			City city = connectedCities.get(i);
-			System.out.println(city.getName() + " is connected to " + this.name);
+			JOptionPane.showInputDialog(city.getName() + " is connected to " + this.name);
 		}
 	}
 }
