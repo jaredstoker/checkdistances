@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
  */
 
 /**
- * @author Xcetra
+ * @author Alexander
  *
  */
 public class City {
