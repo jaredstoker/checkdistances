@@ -9,15 +9,15 @@ public class BTNode {
 	}
 	
 	public boolean leadsToDestinationBT(City parentCity, City destination) {
-		return(leadsToDestination(parentCity, destination));
+		return(leadsToDestination(parentCity, city, destination));
 	}
 	
-	protected boolean leadsToDestination(City parentCity, City destination) {
-		if(city.checkForConnectingCity(destination)) return true;
-		else for(int i = 0; i<city.distances.size(); i++) {
-			City currentCity = city.distances.get(i).getCity();
-			if (currentCity == city || currentCity == parentCity) continue;
-			else if(leadsToDestination(currentCity, destination)) return true;
+	protected boolean leadsToDestination(City parentCity, City currentCity, City destination) {
+		if(currentCity.checkForConnectingCity(destination)) return true;
+		else for(int i = 0; i<currentCity.distances.size(); i++) {
+			City tempCity = currentCity.distances.get(i).getCity();
+			if (tempCity == city || tempCity == parentCity) continue;
+			else if(leadsToDestination(currentCity, tempCity, destination)) return true;
 		}
 		return false;
 	}

@@ -1,3 +1,4 @@
+//Aaron McGhie
 public class Distance {
    private int length;
    private City connectingCity;
