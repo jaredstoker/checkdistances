@@ -28,9 +28,9 @@ public class CheckDistancesGUI implements ActionListener{
 		private void guiComponents() {
 			// TODO Auto-generated method stub
 			  
-	        jPanel1 = new JPanel();
-	        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-	        setBackground(new java.awt.Color(139, 0, 0));
+	        jPanel = new JPanel();
+	        //setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+	        //setBackground(new java.awt.Color(139, 0, 0));
 	        output = new JTextArea();
 	        
 	        sea.setText("Seattle");
